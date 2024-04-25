@@ -1,3 +1,35 @@
 // * {
 //   font-family: "Inter";
 // }
+header {
+  // width: 100%;
+  background-image: url("./public/images/HeroBanner.png");
+  // background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  // height: 0;
+  height: auto;
+  // padding-top: 66.64%; /* (img-height / img-width * container-width) */
+  /* (853 / 1280 * 100) */
+}
+
+.h2-container {
+  display: flex;
+  justify-content: center;
+}
+
+main h2 {
+  position: relative;
+  display: inline-block;
+}
+
+main h2::after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 35%);
+  bottom: -2px; /* Adjust as needed */
+  width: 70%; /* Adjust the length of the underline */
+  height: 2px; /* Adjust the thickness of the underline */
+  background-color: black; /* Adjust the color of the underline */
+}
