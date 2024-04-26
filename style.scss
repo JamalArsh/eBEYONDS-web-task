@@ -1,32 +1,17 @@
-// @import "~bootstrap/scss/bootstrap";
 $theme-colors: (
   "primary": #0864b1,
 );
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
-// :root {
-//   font-family: monospace;
-// }
-
-// body {
-//   font-family: "Biko";
-// }
-
 header {
-  // background-color: #0864b1;
-
   background-image: url("./public/icons/HeroBackgroundShape.svg"),
     url("./public/images/HeroBanner.png");
-  // background-size: contain;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  // background-attachment: fixed;
   width: 100%;
   height: auto;
-  .header-container {
-  }
 }
 
 .h2-container {
@@ -53,13 +38,10 @@ main h2::after {
   position: relative;
   .swiper {
     width: 100%;
-    // height: 400px;
   }
 
   .swiper-slide {
     text-align: center;
-    // font-size: 18px;
-    // background: #567893;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,14 +85,11 @@ main h2::after {
 .testimonial {
   .swiper {
     width: 100%;
-    // height: 500px;
     height: auto;
   }
 
   .swiper-slide {
     text-align: center;
-    font-size: 18px;
-    // background: #555;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,10 +117,6 @@ main h2::after {
   position: absolute;
 }
 
-.temp {
-  // height: 300px;
-}
-
 .max-width {
   max-width: 1713px;
 }
@@ -167,7 +142,6 @@ main h2::after {
 
 .quote::after {
   content: url("./public/icons/quote-right-Icon.svg");
-  // content: "hell";
   position: absolute;
   right: -17px;
   top: -6px;
@@ -175,9 +149,46 @@ main h2::after {
 
 .quote::before {
   content: url("./public/icons/quote-right-Icon.svg");
-  // content: "hell";
   position: absolute;
   transform: rotate(180deg);
-  left: -3px;
-  bottom: -1px;
+  left: -4px;
+  bottom: -2px;
+}
+
+.company-logo-font-size {
+  font-size: 1.283rem;
+}
+
+.nav-links-font-size {
+  font-size: 1rem;
+}
+
+.welcome-font-size {
+  font-size: 3.25rem;
+  font-weight: bold;
+}
+
+.welcome-p-font-size {
+  font-size: 1.8rem;
+}
+
+.section-titles-font-size {
+  font-size: 2.7rem;
+}
+
+.footer-company-logo-font-size {
+  font-size: 2.188rem;
+}
+
+.address-font-size {
+  font-size: 1.125rem;
+}
+
+.stay-font-size {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+.footer-details-font-size {
+  font-size: 1.563;
 }
