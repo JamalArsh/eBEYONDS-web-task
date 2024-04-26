@@ -1,17 +1,30 @@
-// * {
-//   font-family: "Inter";
+// @import "~bootstrap/scss/bootstrap";
+$theme-colors: (
+  "primary": #0864b1,
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// :root {
+//   font-family: monospace;
 // }
+
+// body {
+//   font-family: "Biko";
+// }
+
 header {
-  // width: 100%;
-  background-image: url("./public/images/HeroBanner.png");
+  // background-color: #0864b1;
+
+  background-image: url("./public/icons/HeroBackgroundShape.svg"),
+    url("./public/images/HeroBanner.png");
   // background-size: contain;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  // height: 0;
   height: auto;
-  // padding-top: 66.64%; /* (img-height / img-width * container-width) */
-  /* (853 / 1280 * 100) */
+  .header-container {
+  }
 }
 
 .h2-container {
@@ -28,10 +41,10 @@ main h2::after {
   content: "";
   position: absolute;
   left: calc(50% - 35%);
-  bottom: -2px; /* Adjust as needed */
-  width: 70%; /* Adjust the length of the underline */
-  height: 2px; /* Adjust the thickness of the underline */
-  background-color: black; /* Adjust the color of the underline */
+  bottom: -7px;
+  width: 70%;
+  height: 8px;
+  background-color: #676767;
 }
 
 .testimonial {
@@ -91,4 +104,21 @@ main h2::after {
   left: 0;
   top: 0;
   position: absolute;
+}
+
+.temp {
+  // height: 300px;
+}
+
+.max-width {
+  max-width: 1713px;
+}
+
+.about-us-p {
+  font-size: 2.188rem;
+  line-height: 5rem;
+
+  @media screen and (max-width: 1200px) {
+    line-height: 3rem;
+  }
 }

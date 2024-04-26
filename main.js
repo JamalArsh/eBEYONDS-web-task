@@ -6,11 +6,20 @@ import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 
 var swiper = new Swiper(".mySwiper-1", {
-  slidesPerView: 3,
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  breakpoints: {
+    700: {
+      slidesPerView: 2,
+      spaceBetweenSlides: 30,
+    },
+    999: {
+      slidesPerView: 3,
+      spaceBetweenSlides: 40,
+    },
   },
 });
 
