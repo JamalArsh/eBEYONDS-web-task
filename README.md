@@ -2,7 +2,7 @@
 ## To run the project
 * clone the project
 * run follwing commamds in terminal
-* '''bash
+* ```bash
   npm install
   npm run dev
-  '''
+  ```
