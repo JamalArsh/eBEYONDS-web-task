@@ -21,6 +21,8 @@ header {
   // background-size: contain;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  // background-attachment: fixed;
   width: 100%;
   height: auto;
   .header-container {
@@ -47,16 +49,16 @@ main h2::after {
   background-color: #676767;
 }
 
-.testimonial {
+.latest-news {
   .swiper {
     width: 100%;
-    height: 500px;
+    // height: 400px;
   }
 
   .swiper-slide {
     text-align: center;
-    font-size: 18px;
-    background: #555;
+    // font-size: 18px;
+    // background: #567893;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,21 +70,46 @@ main h2::after {
     height: 100%;
     object-fit: cover;
   }
+
+  .card-text {
+    font-size: 1.25rem;
+  }
 }
 
-.latest-news {
+.mySwiper-1 {
+  position: relative;
+  .swiper-pagination-bullet {
+    width: 3.75rem;
+    height: 0.625rem;
+    border-radius: 0;
+  }
+}
+
+.mySwiper-1::after {
+  content: "";
+  width: 100%;
+  height: 75%;
+  background-color: #f5f5f5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.testimonial {
   .swiper {
     width: 100%;
-    height: 400px;
+    // height: 500px;
+    height: auto;
   }
 
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #567893;
+    // background: #555;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 4rem;
   }
 
   .swiper-slide img {
@@ -121,4 +148,31 @@ main h2::after {
   @media screen and (max-width: 1200px) {
     line-height: 3rem;
   }
+}
+
+.swiper-slide {
+  p {
+    font-size: 1.875rem;
+  }
+}
+
+.quote {
+  position: relative;
+}
+
+.quote::after {
+  content: url("./public/icons/quote-right-Icon.svg");
+  // content: "hell";
+  position: absolute;
+  right: -17px;
+  top: -6px;
+}
+
+.quote::before {
+  content: url("./public/icons/quote-right-Icon.svg");
+  // content: "hell";
+  position: absolute;
+  transform: rotate(180deg);
+  left: -3px;
+  bottom: -1px;
 }
